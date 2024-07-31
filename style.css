@@ -1,0 +1,51 @@
+#header {
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.25rem;
+    line-height: 3.25rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.125);
+    cursor: default;
+    z-index: 10000;
+}
+#header a {
+    display: block;
+    height: inherit;
+    line-height: inherit;
+    border-bottom: 0;
+}
+#header.alt {
+    background-color: #292f33;
+    color: #ffffff;
+    -moz-animation: none;
+    -webkit-animation: none;
+    -ms-animation: none;
+    animation: none;
+    box-shadow: none;
+    background-color: transparent;
+    position: absolute;
+}
+#header.alt > nav {
+    top: 1rem;
+    right: 1rem;
+}
+#header > nav {
+    position: absolute;
+    right: 0;
+}
+#header.alt > .navPanelToggle {
+    top: 1rem;
+    right: 1rem;
+}
+
+#header.alt a {
+    color: inherit;
+}
+#wrapper > .main > header {
+    width: 100%;
+    max-width: 34rem;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+}
