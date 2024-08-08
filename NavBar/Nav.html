@@ -36,15 +36,46 @@
         </div>
       </nav>
       <script>
-            let navs = ["Home", "About", "Service", "Contact", "Register", "Login"]
-            let className = document.getElementsByClassName('nav-link')
+            // let navs = ["Home", "About", "Service", "Contact", "Register", "Login"];
+            let navObj = [
+                {
+                    name:"Home",
+                    url:"/index.html"
+                },
+                {
+                    name:"About",
+                    url:"/about.html"
+                },
+                {
+                    name:"Service",
+                    url:"/contact.html"
+                },
+                {
+                    name:"Service",
+                    url:"/service.html"
+                },
+                {
+                    name:"Register",
+                    url:"/register.html"
+                },
+                {
+                    name:"Login",
+                    url:"/login.html"
+                },
+                
+
+            ]
+            let className = document.getElementsByClassName('nav-link');
+            let url = document.getElementById('')
+            // var navLink = document.querySelector('.nav-item.active .nav-link');
+            console.log(url)
             console.log(className)
-            className[0].innerHTML = navs[0];
-            className[1].innerHTML = navs[1];
-            className[2].innerHTML = navs[2];
-            className[3].innerHTML = navs[3];
-            className[4].innerHTML = navs[4];
-            className[5].innerHTML = navs[5];
+            className[0].innerHTML = navObj[0].name;
+            className[1].innerHTML = navObj[1].name;
+            className[2].innerHTML = navObj[2].name;
+            className[3].innerHTML = navObj[3].name;
+            className[4].innerHTML = navObj[4].name;
+            className[5].innerHTML = navObj[5].name;
       </script>
 </body>
 </html>
